@@ -1,0 +1,115 @@
+
+.balance-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #1e1e2f; /* Darker background */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.balance-card {
+  flex: 1;
+  position: relative;
+  background: #2c2c3b;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+.balance-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+.income-card {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+}
+
+.expense-card {
+  background: linear-gradient(135deg, #e53935, #ff7043);
+}
+
+.net-card {
+  background: linear-gradient(135deg, #1e88e5, #64b5f6);
+}
+
+
+.circle {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.circle span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+h4 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.card-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+@media (max-width: 992px) {
+  .balance-summary {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .balance-summary {
+    padding: 1rem;
+  }
+
+  .balance-card {
+    padding: 1.5rem;
+  }
+
+  .circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .circle span {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+}

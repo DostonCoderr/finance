@@ -1,0 +1,130 @@
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 30px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f0f4f8, #e0eafc);
+  min-height: 100vh;
+}
+
+
+.left-container {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.left-container:hover {
+  transform: scale(1.01);
+}
+
+.updates-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.currency-selector select {
+  padding: 12px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #e3f2fd;
+  color: #007bff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.currency-selector select:hover {
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.currency-rates {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.currency-card {
+  background: linear-gradient(135deg, #42e695, #3bb2b8);
+  border-radius: 12px;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.currency-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.currency-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.currency-card h3 {
+  margin: 5px 0;
+  font-size: 1.5rem;
+}
+
+.currency-card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.right-container {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.right-container:hover {
+  transform: scale(1.01);
+}
+
+.chart-card-header {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.chart-container:hover {
+  transform: scale(1.03);
+}
+
+
+@media (max-width: 768px) {
+  .home-container {
+    grid-template-columns: 1fr;
+  }
+
+  .currency-card {
+    width: 100%;
+  }
+}
