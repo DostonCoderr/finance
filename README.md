@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Bootstrap va diagrammalar yordamida loyihaga reaksiya
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu loyiha **React**, **Bootstrap** va **Charts** va **API** (masalan, `react-chartjs-2` yoki shunga oʻxshash) yordamida yaratilgan veb-ilovadir. Ilova ma'lumotlarni boshqarish uchun interfaol interfeysni taqdim etadi, diagrammalar yordamida ma'lumotlarni vizualizatsiya qilish imkoniyatiga ega.
 
-## Available Scripts
+## Mundarija
 
-In the project directory, you can run:
+- [Loyiha haqida umumiy ma'lumot](#loyihaga umumiy nuqtai)
+- [Xususiyatlar](#xususiyatlar)
+- [Tech stack](#tech-stack)
+- [Oʻrnatish](#oʻrnatish)
+- [Ilovani ishga tushirish](#ilovani ishga tushirish)
+- [Foydalanish](#usage)
+- [Dependencies](#dependencies)
+- [Litsenziya](#litsenziya)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Loyihaning umumiy ko'rinishi
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Bu React-ga asoslangan veb-ilova bo'lib, u sizga tranzaktsiyalarni boshqarish, valyuta konvertatsiyasini amalga oshirish va interaktiv diagrammalar ko'rinishidagi ma'lumotlarni vizualizatsiya qilish imkonini beradi. Ilova sezgir dizayn va ma'lumotlarni vizualizatsiya qilish uchun **React**, **React Bootstrap** va **Chart.js** (`react-chartjs-2' orqali) dan foydalanadi.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Xususiyatlari
 
-### `npm run build`
+- **Responsive dizayn**: Ilova to‘liq javob beradi, yon panelda ekran o‘lchamiga qarab almashiladi.
+- **Tranzaktsiyalarni boshqarish**: Siz tranzaktsiyalarni qo'shishingiz, ko'rishingiz va filtrlashingiz mumkin.
+- **Valyutani konvertatsiya qilish**: real vaqt rejimidagi valyuta kurslari asosida valyutani konvertatsiya qilish xususiyati.
+- **Charts**: “react-chartjs-2” yordamida har xil diagramma turlaridan foydalangan holda maʼlumotlarni ingl.
+- **Bootstrap Styling**: Ilova toza va zamonaviy ko‘rinish uchun **Bootstrap** bilan yaratilgan.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React** - foydalanuvchi interfeyslarini yaratish uchun JavaScript kutubxonasi.
+- **React Bootstrap** - Bootstrap komponentlari React uchun qayta tiklangan.
+- **Chart.js** - Ma'lumotlarni vizuallashtirish uchun ishlatiladigan mashhur diagramma kutubxonasi.
+- **react-chartjs-2** - Diagrammalarni React komponentlariga oson integratsiyalash imkonini beruvchi `Chart.js` uchun React oʻrami.
+- **React Router** - Turli sahifalar va marshrutlar o'rtasida navigatsiya qilish uchun.
+-**https://www.exchangerate-api.com/** - Bu Conversiya va COnvert Tranzaksiyalarni uchun
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## O'rnatish
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Old shartlar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### O'rnatish uchun qadamlar
 
-## Learn More
+1. **Repozitoriyni klonlash**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   Birinchidan, Git yordamida loyihani mahalliy mashinangizga klonlang:
+   ``` bash
+   https://github.com/DostonCoderr/finance
+2.Loyiha papkasiga o'ting:
+Kodni nusxalash
+cd finance>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Bog'liqlarni o'rnating:
 
-### Code Splitting
+Barcha kerakli bog'liqliklarni o'rnatish uchun quyidagi buyruqni bajaring:
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Shu bilan bir qatorda, agar siz ipdan foydalansangiz, quyidagilarni bajaring:
+Yarn o'rnatish
+yarn install
 
-### Analyzing the Bundle Size
+Ilovani ishga tushirish
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Rivojlanish serverini ishga tushiring:
 
-### Making a Progressive Web App
+Ilovani ishlab chiqish rejimida ishga tushirish uchun quyidagi buyruqni bajaring:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Yoki Yarn bilan:
+yarn start
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+Ilovaga kirish:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Server ishga tushgandan so'ng, veb-brauzeringizni oching va http://localhost:3000 sahifasiga o'ting. Bu ilovaning bosh sahifasini ko'rsatadi.
+
+
+
+
+------------------------------------------ILTIMOS KAMCHILIKLARIGA QARAMANG CHUNKI STILNI BERISHGA UNCHA ULGURMADIM_-----------------
